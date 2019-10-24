@@ -20,7 +20,6 @@
 		7BC25FB41EF1CEB0002ECBBA /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FB31EF1CEAE002ECBBA /* TinyYOLO.mlmodel */; };
 		A27217D2640471EB96198DEE /* Pods_TinyYOLO_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C77B62A77F2F46FA9EA36 /* Pods_TinyYOLO_CoreML.framework */; };
 		DD0C4399236152A8005EA8E2 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0C4398236152A8005EA8E2 /* IDETemplateMacros.plist */; };
-		DD0C439B2361531C005EA8E2 /* CustomHeader.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD0C439A2361531C005EA8E2 /* CustomHeader.txt */; };
 		DD3634C2235ED7E100258F23 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3634C1235ED7E100258F23 /* Reusable.swift */; };
 		DD3634C8235ED9FC00258F23 /* OfflineMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3634C7235ED9FC00258F23 /* OfflineMovieViewModel.swift */; };
 		DD3634CA235EDA1F00258F23 /* OfflineMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3634C9235EDA1F00258F23 /* OfflineMovieModel.swift */; };
@@ -56,7 +55,6 @@
 		7BC25FAD1EF1B7D1002ECBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BC25FB31EF1CEAE002ECBBA /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
 		DD0C4398236152A8005EA8E2 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
-		DD0C439A2361531C005EA8E2 /* CustomHeader.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CustomHeader.txt; sourceTree = "<group>"; };
 		DD3634C1235ED7E100258F23 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		DD3634C7235ED9FC00258F23 /* OfflineMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineMovieViewModel.swift; sourceTree = "<group>"; };
 		DD3634C9235EDA1F00258F23 /* OfflineMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineMovieModel.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				7BA1C6DB1EF2B56D00BB25EF /* dog416.png */,
 				7BC25FAD1EF1B7D1002ECBBA /* Info.plist */,
 				DD0C4398236152A8005EA8E2 /* IDETemplateMacros.plist */,
-				DD0C439A2361531C005EA8E2 /* CustomHeader.txt */,
 				7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */,
 			);
 			path = "TinyYOLO-CoreML";
@@ -318,7 +315,6 @@
 			files = (
 				DD0C4399236152A8005EA8E2 /* IDETemplateMacros.plist in Resources */,
 				DDF08D05235EC49900A2F05A /* Days_Gone.mp4 in Resources */,
-				DD0C439B2361531C005EA8E2 /* CustomHeader.txt in Resources */,
 				7BA1C6DC1EF2B57200BB25EF /* dog416.png in Resources */,
 				DDF08D04235EC49900A2F05A /* Marvel_Studios_Endgame.mp4 in Resources */,
 				7BC25FA91EF1B7D1002ECBBA /* Assets.xcassets in Resources */,
