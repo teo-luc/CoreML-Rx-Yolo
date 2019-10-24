@@ -2,7 +2,7 @@
 //  File.swift
 //  TinyYOLO-CoreML
 //
-//  Created by Teqnological on 10/23/19.
+//  Created by  on 10/23/19.
 //  Copyright © 2019 MachineThink. All rights reserved.
 //
 
