@@ -2,7 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDEDidComputeMac32BitWarning</key>
-	<true/>
+	<key>FILEHEADER</key>
+	<string>/**
+/**
+___PACKAGENAME___
+Created by: ___FULL_USERNAME___ on ___DATE___
+Copyright (c) 2017 My Company
+*/
+</string>
 </dict>
 </plist>

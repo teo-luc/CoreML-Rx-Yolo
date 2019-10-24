@@ -1,0 +1,6 @@
+/**
+/**
+___PACKAGENAME___
+Created by: ___FULL_USERNAME___ on ___DATE___
+Copyright (c) 2017 My Company
+*/
