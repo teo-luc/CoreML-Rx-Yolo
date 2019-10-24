@@ -14,16 +14,16 @@ enum VideoProvider {}
 extension VideoProvider {
     static let videos = BehaviorRelay(value: [
         [
+            "title": "End Game – Marvel Studio -Trailer",
+            "fileName": "Marvel_Studios_Endgame.mp4"
+        ],
+        [
             "title": "Days Gone – Story Trailer",
             "fileName": "Days_Gone.mp4"
         ],
         [
             "title": "God of War 4 – Trailer",
             "fileName": "God_of_War.mp4"
-        ],
-        [
-            "title": "End Game – Marvel Studio -Trailer",
-            "fileName": "Marvel_Studios_Endgame.mp4"
         ]
     ])
 
