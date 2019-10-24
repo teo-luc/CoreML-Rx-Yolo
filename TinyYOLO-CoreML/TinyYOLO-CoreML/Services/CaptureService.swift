@@ -8,15 +8,20 @@
 
 import Foundation
 import AVFoundation
+import RxSwift
 
-protocol CaptureService {
-    typealias Output = (CaptureService, CVPixelBuffer?, CMTime) -> Void
+struct Output {
+    let pixelBuffer: CVPixelBuffer?
+    let time: CMTime
+}
+
+protocol CaptureService {    
     // Input
     var desiredFrameRate: Int { get }
     // Setup
-    func setup(_ completion: @escaping (CALayer?) -> Void) -> Void
+    func setup() -> Observable<CALayer?>
     // Action
-    func startCapture(_ completion: @escaping Output) -> Void
+    func startCapture() -> Observable<Output>
     func resumeCapture()
     func pauseCapture()
 }

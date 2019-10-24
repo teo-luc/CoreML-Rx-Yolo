@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import RxSwift
 
 public final class AVPlayerCaptureService: NSObject, CaptureService {
     
@@ -34,23 +35,25 @@ public final class AVPlayerCaptureService: NSObject, CaptureService {
     
     // MARK: -
     
-    func setup(_ completion: @escaping (CALayer?) -> Void) {
-        // 1
-        queue.async {
-            DispatchQueue.main.async {
+    func setup() -> Observable<CALayer?> {
+        let layer = Observable<CALayer?>.create { [unowned self] (observer) -> Disposable in
+            self.queue.async {
                 let layer = AVPlayerLayer.init(player: self.player)
-                completion(layer)
+                observer.onNext(layer)
             }
+            return Disposables.create()
         }
-        // 2
-        player = AVPlayer(url: assetURL)
-        // 3
-        output = setupOutput(from: player, frame: desiredFrameRate, queue: queue, using: {[weak self] (time) in
-            guard let weakSelf = self, let callback = weakSelf.outPutHandler else { return }
-            let pixelBuffer = weakSelf.output.pixelBuffer(forItemTime: time)
-            callback(weakSelf, pixelBuffer, time)
-        })
-    }
+         // 2
+         player = AVPlayer(url: assetURL)
+//         // 3
+//         output = setupOutput(from: player, frame: desiredFrameRate, queue: queue, using: {[weak self] (time) in
+//             guard let weakSelf = self, let callback = weakSelf.outPutHandler else { return }
+//             let pixelBuffer = weakSelf.output.pixelBuffer(forItemTime: time)
+//             callback(weakSelf, pixelBuffer, time)
+//         })
+        
+        return layer
+     }
     
     private func setupOutput(from avPlayer: AVPlayer, frame frameRate: Int, queue: DispatchQueue, using block: @escaping (CMTime) -> Void) -> AVPlayerItemVideoOutput {
         // 1
@@ -68,9 +71,18 @@ public final class AVPlayerCaptureService: NSObject, CaptureService {
         return avOuput
     }
     
-    func startCapture(_ completion: @escaping AVPlayerCaptureService.Output) {
-        self.outPutHandler = completion
+    func startCapture() -> Observable<Output> {
+        let ouput = Observable<Output>.create {[unowned self] (observer) -> Disposable in
+            self.output = self.setupOutput(from: self.player, frame: self.desiredFrameRate, queue: self.queue, using: {[weak self] (time) in
+                guard let weakSelf = self  else { return }
+                let pixelBuffer = weakSelf.output.pixelBuffer(forItemTime: time)
+                observer.onNext(Output(pixelBuffer: pixelBuffer, time: time))
+            })
+            return Disposables.create()
+        }
+        //
         resumeCapture()
+        return ouput
     }
     
     func resumeCapture() {

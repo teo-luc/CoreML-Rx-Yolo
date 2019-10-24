@@ -8,12 +8,16 @@
 
 import UIKit
 import AVFoundation
+import RxSwift
+
 
 final class CameraCaptureService: NSObject, CaptureService {
-    
+  
+    typealias OutputBlock = (CameraCaptureService, CVPixelBuffer?, CMTime) -> Void
+
     // MARK: Private
     
-    private var outPutHandler: Output?
+    private var outPutHandler: OutputBlock?
     private var queue: DispatchQueue = DispatchQueue(label: "net.machinethink.camera-queue")
     private let captureSession = AVCaptureSession()
     private let videoOutput = AVCaptureVideoDataOutput()
@@ -28,6 +32,10 @@ final class CameraCaptureService: NSObject, CaptureService {
     
     // MARK: -
     
+    func setup() -> Observable<CALayer?> {
+        return Observable.empty()
+    }
+    
     func setup(_ completion: @escaping (CALayer?) -> Void) {
         queue.async {
             let _ = self.setUpCamera(sessionPreset: .medium)
@@ -37,7 +45,11 @@ final class CameraCaptureService: NSObject, CaptureService {
         }
     }
     
-    func startCapture(_ completion: @escaping CameraCaptureService.Output) {
+    func startCapture() -> Observable<Output> {
+        return Observable.empty()
+    }
+    
+    func startCapture(_ completion: @escaping OutputBlock) {
         self.outPutHandler = completion
         resumeCapture()
     }
