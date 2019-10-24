@@ -1,4 +1,4 @@
 # CoreML-Rx-Yolo
 <p align="left">
-  <img src="https://github.com/teo-luc/CoreML-Rx-Yolo/blob/master/demo.gif" width="350" title="Demo">
+  <img src="https://github.com/teo-luc/CoreML-Rx-Yolo/blob/master/demo.gif" width="100" title="Demo">
 </p>
