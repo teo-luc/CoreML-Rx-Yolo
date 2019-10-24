@@ -138,7 +138,9 @@
 		DD0C43A623615CFB005EA8E2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DD612B9C235FFFA9004BDDD9 /* CaptureServices */,
+				DD612B9D235FFFCE004BDDD9 /* CaptureService.swift */,
+				DD612B9F23600691004BDDD9 /* CameraCaptureService.swift */,
+				DDF08CFA235E998C00A2F05A /* AVPlayerCaptureService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,16 +191,6 @@
 				DD3634CB235EDA4000258F23 /* OfflineMovieListViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DD612B9C235FFFA9004BDDD9 /* CaptureServices */ = {
-			isa = PBXGroup;
-			children = (
-				DD612B9D235FFFCE004BDDD9 /* CaptureService.swift */,
-				DD612B9F23600691004BDDD9 /* CameraCaptureService.swift */,
-				DDF08CFA235E998C00A2F05A /* AVPlayerCaptureService.swift */,
-			);
-			path = CaptureServices;
 			sourceTree = "<group>";
 		};
 		DD612BA12360116C004BDDD9 /* Libs */ = {
