@@ -27,25 +27,21 @@ class DetectingObjectsViewController: UIViewController {
     
     private func bind() {
         // 1
-        let input = DetectingObjectsViewModel.Intput(trigger: viewState(),
+        let input = DetectingObjectsViewModel.Intput(trigger: viewStates(),
                                                      screenSize: self.view.bounds.size,
                                                      captureService: captureService)
         let output = viewModel.transfer(from: input)
-        // 2
+        // 2 Displaying
         output.previewLayer.drive(onNext: { [unowned self] (layer) in
             guard let previewLayer = layer else { return }
             previewLayer.frame = self.videoPreview.bounds
             self.videoPreview.layer.insertSublayer(previewLayer, at: 0)
         }).disposed(by: disposeBag)
-        // 3
-        
         output.boundingBoxes.drive(onNext: { [weak self] (boxes) in
             guard let weakSelf = self else { return }
             weakSelf.showBoxes(boxes)
         }).disposed(by: disposeBag)
-        // 4
         output.timeRate.drive(self.timeLabel.rx.text).disposed(by: disposeBag)
-        //
         output.isDetecting.drive().disposed(by: disposeBag)
     }
 }
@@ -53,7 +49,7 @@ class DetectingObjectsViewController: UIViewController {
 // MARK: - ViewStates and AppStates
 
 extension DetectingObjectsViewController {
-    private func viewState() -> Driver<Bool> {
+    private func viewStates() -> Driver<Bool> {
         let viewWillAppear = self.rx.sentMessage(#selector(self.viewWillAppear(_:))).map { _ in true }
         let appInForceground = NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification).map { _ in true }
         let viewWillDisappear = self.rx.sentMessage(#selector(self.viewWillDisappear(_:))).map { _ in false }

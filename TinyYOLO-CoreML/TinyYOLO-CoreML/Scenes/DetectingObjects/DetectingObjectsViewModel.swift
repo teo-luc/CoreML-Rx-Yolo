@@ -37,6 +37,7 @@ final class DetectingObjectsViewModel: ViewModelType {
         let color: UIColor
     }
     private var boxes = PublishRelay<[Box]>()
+    private var frameRateLabel = PublishRelay<String>()
     
     struct Intput {
         let trigger: Driver<Bool>
@@ -55,19 +56,12 @@ final class DetectingObjectsViewModel: ViewModelType {
     func transfer(from input: DetectingObjectsViewModel.Intput) -> DetectingObjectsViewModel.Output {
         // 1. init colors
         self.colors = setUpColors()
-        // 1
-        self.input = input
         // 2
+        self.input = input
+        // 3
         let previewLayer = self.input.captureService.setup().asDriverOnErrorJustComplete()
         let boundingBoxes = boxes.asDriverOnErrorJustComplete()
-        let timeRate = self.input.captureService
-            .startCapture()
-            .map { [weak self] (ouput) -> String in
-                guard let weakSelf = self, let pixelBuffer = ouput.pixelBuffer else { return "" }
-                return weakSelf.prediction(pixelBuffer, weakSelf.input.screenSize)
-        }.asDriverOnErrorJustComplete()
-        
-        //
+        let timeRate = frameRateLabel.asDriver(onErrorJustReturn: "")
         let isDetecting = self.input.trigger.flatMapLatest { (isAppeared) in
             return Observable.of(isAppeared).asDriverOnErrorJustComplete()
         }.do(onNext: {[unowned self] (isAppeared) in
@@ -77,6 +71,13 @@ final class DetectingObjectsViewModel: ViewModelType {
                 self.input.captureService.pauseCapture()
             }
         })
+        //
+        let _ = self.input.captureService
+            .startCapture()
+            .bind(onNext: { [weak self] (ouput) in
+                guard let weakSelf = self, let pixelBuffer = ouput.pixelBuffer else { return }
+                weakSelf.prediction(pixelBuffer, weakSelf.input.screenSize)
+            })
         //
         return Output(previewLayer: previewLayer,
                       boundingBoxes: boundingBoxes,
@@ -151,17 +152,16 @@ extension DetectingObjectsViewModel {
         return boxes
     }
     
-    func prediction(_ pixelBuffer: CVPixelBuffer, _ screenSize: CGSize) -> String {
-        var label = ""
+    func prediction(_ pixelBuffer: CVPixelBuffer, _ screenSize: CGSize) {
+        ///
+        semaphore.wait()
+        ///
         let currentMediaTime = CACurrentMediaTime()
         let pixelBufferSize = CVImageBufferGetEncodedSize(pixelBuffer)
         //
         if let resizedPixelBuffer = resizePixelBuffer(pixelBuffer, width: YOLO.inputWidth, height: YOLO.inputHeight),
             let result = try? self.yolo.predict(image: resizedPixelBuffer),
             let boundingBoxes = result {
-            ///
-            semaphore.wait()
-            ///
             let elapsed = (CACurrentMediaTime() - currentMediaTime)
             //
             if (DetectingObjectsViewModel.drawBoundingBoxes) {
@@ -169,11 +169,10 @@ extension DetectingObjectsViewModel {
             }
             //
             let fps = self.measureFPS(framesDone: &self.framesDone, frameCapturingStartTime: &self.frameCapturingStartTime)
-            label = String(format: "Elapsed %.5f seconds - %.2f FPS", elapsed, fps)
-            ///
-            semaphore.signal()
-            ///
+            frameRateLabel.accept(String(format: "Elapsed %.5f seconds - %.2f FPS", elapsed, fps))
         }
-        return label
+        ///
+        semaphore.signal()
+        ///
     }
 }
