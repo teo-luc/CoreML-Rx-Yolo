@@ -33,7 +33,14 @@ final class CameraCaptureService: NSObject, CaptureService {
     // MARK: -
     
     func setup() -> Observable<CALayer?> {
-        return Observable.empty()
+        let layer = Observable<CALayer?>.create { [unowned self] (observer) -> Disposable in
+            self.queue.async {
+                let _ = self.setUpCamera(sessionPreset: .medium)
+                observer.onNext(self.previewLayer)
+            }
+            return Disposables.create()
+        }
+        return layer
     }
     
     func setup(_ completion: @escaping (CALayer?) -> Void) {

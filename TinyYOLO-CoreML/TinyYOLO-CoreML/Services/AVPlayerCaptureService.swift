@@ -45,13 +45,7 @@ public final class AVPlayerCaptureService: NSObject, CaptureService {
         }
          // 2
          player = AVPlayer(url: assetURL)
-//         // 3
-//         output = setupOutput(from: player, frame: desiredFrameRate, queue: queue, using: {[weak self] (time) in
-//             guard let weakSelf = self, let callback = weakSelf.outPutHandler else { return }
-//             let pixelBuffer = weakSelf.output.pixelBuffer(forItemTime: time)
-//             callback(weakSelf, pixelBuffer, time)
-//         })
-        
+
         return layer
      }
     
