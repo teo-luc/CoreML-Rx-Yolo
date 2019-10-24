@@ -6,8 +6,8 @@ target 'TinyYOLO-CoreML' do
   use_frameworks!
 
   # Pods for TinyYOLO-CoreML
-#  pod 'RxSwift'
-#  pod 'RxCocoa'
-#  pod 'RxDataSources'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
   
 end

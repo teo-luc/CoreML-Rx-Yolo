@@ -1,0 +1,366 @@
+TinyYOLO-CoreML/Podfile.lock
+TinyYOLO-CoreML/Pods/Manifest.lock
+TinyYOLO-CoreML/Pods/Differentiator/LICENSE.md
+TinyYOLO-CoreML/Pods/Differentiator/README.md
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/AnimatableSectionModel.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/AnimatableSectionModelType+ItemPath.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/AnimatableSectionModelType.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/Changeset.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/Diff.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/IdentifiableType.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/IdentifiableValue.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/ItemPath.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/Optional+Extensions.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/SectionModel.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/SectionModelType.swift
+TinyYOLO-CoreML/Pods/Differentiator/Sources/Differentiator/Utilities.swift
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/project.pbxproj
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/Differentiator.xcscheme
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/Pods-TinyYOLO-CoreML.xcscheme
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/RxCocoa.xcscheme
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/RxDataSources.xcscheme
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/RxRelay.xcscheme
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/RxSwift.xcscheme
+TinyYOLO-CoreML/Pods/Pods.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/xcschememanagement.plist
+TinyYOLO-CoreML/Pods/RxCocoa/LICENSE.md
+TinyYOLO-CoreML/Pods/RxCocoa/README.md
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/DispatchQueue+Extensions.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/Platform.Darwin.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/Platform.Linux.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/RecursiveLock.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/DataStructures/Bag.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/DataStructures/InfiniteSequence.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/DataStructures/PriorityQueue.swift
+TinyYOLO-CoreML/Pods/RxCocoa/Platform/DataStructures/Queue.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Deprecated.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/RxCocoa.h
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/RxCocoa.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/Binder.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/ControlTarget.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/DelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/DelegateProxyType.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/KeyPathBinder.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/NSLayoutConstraint+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/Observable+Bind.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/RxCocoaObjCRuntimeError+Extensions.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/RxTarget.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/SectionedViewDataSourceType.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Common/TextInput.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/KVORepresentable+CoreGraphics.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/KVORepresentable+Swift.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/KVORepresentable.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/Logging.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/NotificationCenter+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/NSObject+Rx+KVORepresentable.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/NSObject+Rx+RawRepresentable.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/NSObject+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Foundation/URLSession+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/NSTextStorage+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIActivityIndicatorView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIAlertAction+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIApplication+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIBarButtonItem+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIButton+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UICollectionView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIControl+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIDatePicker+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIGestureRecognizer+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIImageView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UILabel+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UINavigationController+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UINavigationItem+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIPageControl+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIPickerView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIProgressView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIRefreshControl+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIScrollView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UISearchBar+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UISearchController+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UISegmentedControl+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UISlider+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIStepper+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UISwitch+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UITabBar+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UITabBarController+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UITabBarItem+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UITableView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UITextField+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UITextView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIViewController+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/UIWebView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/DataSources/RxCollectionViewReactiveArrayDataSource.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/DataSources/RxPickerViewAdapter.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/DataSources/RxTableViewReactiveArrayDataSource.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Events/ItemEvents.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxCollectionViewDataSourceType.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxPickerViewDataSourceType.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Protocols/RxTableViewDataSourceType.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDataSourcePrefetchingProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxCollectionViewDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxNavigationControllerDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxScrollViewDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxSearchBarDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxSearchControllerDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTabBarControllerDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTabBarDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTableViewDataSourcePrefetchingProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTableViewDataSourceProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTableViewDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTextStorageDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxTextViewDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/iOS/Proxies/RxWebViewDelegateProxy.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSButton+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSControl+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSImageView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSSlider+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSTextField+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSTextView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/macOS/NSView+Rx.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/_RX.m
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/_RXDelegateProxy.m
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/_RXKVOObserver.m
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/_RXObjCRuntime.m
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/include/_RX.h
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/include/_RXDelegateProxy.h
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/include/_RXKVOObserver.h
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/include/_RXObjCRuntime.h
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Runtime/include/RxCocoaRuntime.h
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/ControlEvent.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/ControlProperty.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Driver/BehaviorRelay+Driver.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Driver/ControlEvent+Driver.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Driver/ControlProperty+Driver.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Driver/Driver+Subscription.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Driver/Driver.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Driver/ObservableConvertibleType+Driver.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/ObservableConvertibleType+SharedSequence.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SchedulerType+SharedSequence.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SharedSequence+Operators.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/SharedSequence/SharedSequence.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Signal/ControlEvent+Signal.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Signal/ObservableConvertibleType+Signal.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Signal/PublishRelay+Signal.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Signal/Signal+Subscription.swift
+TinyYOLO-CoreML/Pods/RxCocoa/RxCocoa/Traits/Signal/Signal.swift
+TinyYOLO-CoreML/Pods/RxDataSources/LICENSE.md
+TinyYOLO-CoreML/Pods/RxDataSources/README.md
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/AnimationConfiguration.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/Array+Extensions.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/CollectionViewSectionedDataSource.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/DataSources.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/Deprecated.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/FloatingPointType+IdentifiableType.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/IntegerType+IdentifiableType.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/RxCollectionViewSectionedAnimatedDataSource.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/RxCollectionViewSectionedReloadDataSource.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/RxPickerViewAdapter.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/RxTableViewSectionedAnimatedDataSource.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/RxTableViewSectionedReloadDataSource.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/String+IdentifiableType.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/TableViewSectionedDataSource.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/UI+SectionedViewType.swift
+TinyYOLO-CoreML/Pods/RxDataSources/Sources/RxDataSources/ViewTransition.swift
+TinyYOLO-CoreML/Pods/RxRelay/LICENSE.md
+TinyYOLO-CoreML/Pods/RxRelay/README.md
+TinyYOLO-CoreML/Pods/RxRelay/RxRelay/BehaviorRelay.swift
+TinyYOLO-CoreML/Pods/RxRelay/RxRelay/Observable+Bind.swift
+TinyYOLO-CoreML/Pods/RxRelay/RxRelay/PublishRelay.swift
+TinyYOLO-CoreML/Pods/RxRelay/RxRelay/Utils.swift
+TinyYOLO-CoreML/Pods/RxSwift/LICENSE.md
+TinyYOLO-CoreML/Pods/RxSwift/README.md
+TinyYOLO-CoreML/Pods/RxSwift/Platform/AtomicInt.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/DispatchQueue+Extensions.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/Platform.Darwin.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/Platform.Linux.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/RecursiveLock.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/DataStructures/Bag.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/DataStructures/InfiniteSequence.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/DataStructures/PriorityQueue.swift
+TinyYOLO-CoreML/Pods/RxSwift/Platform/DataStructures/Queue.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/AnyObserver.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Cancelable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/ConnectableObservableType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Date+Dispatch.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Deprecated.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Errors.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Event.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/GroupedObservable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/ImmediateSchedulerType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/ObservableConvertibleType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/ObservableType+Extensions.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/ObservableType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/ObserverType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Reactive.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Rx.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/RxMutableBox.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/SchedulerType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Concurrency/AsyncLock.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Concurrency/Lock.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Concurrency/LockOwnerType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Concurrency/SynchronizedDisposeType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Concurrency/SynchronizedOnType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Concurrency/SynchronizedUnsubscribeType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/AnonymousDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/BinaryDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/BooleanDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/CompositeDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/Disposables.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/DisposeBag.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/DisposeBase.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/NopDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/RefCountDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/ScheduledDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/SerialDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/SingleAssignmentDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Disposables/SubscriptionDisposable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Extensions/Bag+Rx.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Extensions/String+Rx.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/AddRef.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Amb.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/AsMaybe.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/AsSingle.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Buffer.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Catch.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/CombineLatest+arity.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/CombineLatest+Collection.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/CombineLatest.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/CompactMap.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Concat.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Create.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Debounce.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Debug.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/DefaultIfEmpty.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Deferred.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Delay.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/DelaySubscription.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Dematerialize.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/DistinctUntilChanged.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Do.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/ElementAt.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Empty.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Enumerated.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Error.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Filter.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/First.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Generate.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/GroupBy.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Just.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Map.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Materialize.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Merge.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Multicast.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Never.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/ObserveOn.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Optional.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Producer.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Range.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Reduce.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Repeat.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/RetryWhen.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Sample.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Scan.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Sequence.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/ShareReplayScope.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/SingleAsync.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Sink.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Skip.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/SkipUntil.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/SkipWhile.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/StartWith.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/SubscribeOn.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Switch.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/SwitchIfEmpty.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Take.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/TakeLast.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/TakeUntil.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/TakeWhile.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Throttle.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Timeout.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Timer.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/ToArray.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Using.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Window.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/WithLatestFrom.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Zip+arity.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Zip+Collection.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observables/Zip.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observers/AnonymousObserver.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observers/ObserverBase.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Observers/TailRecursiveSink.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/ConcurrentDispatchQueueScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/ConcurrentMainScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/CurrentThreadScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/HistoricalScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/MainScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/OperationQueueScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/RecursiveScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/SchedulerServices+Emulation.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/SerialDispatchQueueScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/VirtualTimeConverterType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/VirtualTimeScheduler.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/Internal/InvocableScheduledItem.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/Internal/InvocableType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/Internal/ScheduledItem.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Schedulers/Internal/ScheduledItemType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Subjects/AsyncSubject.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Subjects/BehaviorSubject.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Subjects/PublishSubject.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Subjects/ReplaySubject.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Subjects/SubjectType.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/SwiftSupport/SwiftSupport.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/Completable+AndThen.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/Completable.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/Maybe.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/ObservableType+PrimitiveSequence.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/PrimitiveSequence+Zip+arity.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/PrimitiveSequence.swift
+TinyYOLO-CoreML/Pods/RxSwift/RxSwift/Traits/Single.swift
+TinyYOLO-CoreML/Pods/Target Support Files/Differentiator/Differentiator-dummy.m
+TinyYOLO-CoreML/Pods/Target Support Files/Differentiator/Differentiator-Info.plist
+TinyYOLO-CoreML/Pods/Target Support Files/Differentiator/Differentiator-prefix.pch
+TinyYOLO-CoreML/Pods/Target Support Files/Differentiator/Differentiator-umbrella.h
+TinyYOLO-CoreML/Pods/Target Support Files/Differentiator/Differentiator.modulemap
+TinyYOLO-CoreML/Pods/Target Support Files/Differentiator/Differentiator.xcconfig
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-acknowledgements.markdown
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-acknowledgements.plist
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-dummy.m
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-frameworks.sh
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-Info.plist
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-umbrella.h
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML.debug.xcconfig
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML.modulemap
+TinyYOLO-CoreML/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML.release.xcconfig
+TinyYOLO-CoreML/Pods/Target Support Files/RxCocoa/RxCocoa-dummy.m
+TinyYOLO-CoreML/Pods/Target Support Files/RxCocoa/RxCocoa-Info.plist
+TinyYOLO-CoreML/Pods/Target Support Files/RxCocoa/RxCocoa-prefix.pch
+TinyYOLO-CoreML/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h
+TinyYOLO-CoreML/Pods/Target Support Files/RxCocoa/RxCocoa.modulemap
+TinyYOLO-CoreML/Pods/Target Support Files/RxCocoa/RxCocoa.xcconfig
+TinyYOLO-CoreML/Pods/Target Support Files/RxDataSources/RxDataSources-dummy.m
+TinyYOLO-CoreML/Pods/Target Support Files/RxDataSources/RxDataSources-Info.plist
+TinyYOLO-CoreML/Pods/Target Support Files/RxDataSources/RxDataSources-prefix.pch
+TinyYOLO-CoreML/Pods/Target Support Files/RxDataSources/RxDataSources-umbrella.h
+TinyYOLO-CoreML/Pods/Target Support Files/RxDataSources/RxDataSources.modulemap
+TinyYOLO-CoreML/Pods/Target Support Files/RxDataSources/RxDataSources.xcconfig
+TinyYOLO-CoreML/Pods/Target Support Files/RxRelay/RxRelay-dummy.m
+TinyYOLO-CoreML/Pods/Target Support Files/RxRelay/RxRelay-Info.plist
+TinyYOLO-CoreML/Pods/Target Support Files/RxRelay/RxRelay-prefix.pch
+TinyYOLO-CoreML/Pods/Target Support Files/RxRelay/RxRelay-umbrella.h
+TinyYOLO-CoreML/Pods/Target Support Files/RxRelay/RxRelay.modulemap
+TinyYOLO-CoreML/Pods/Target Support Files/RxRelay/RxRelay.xcconfig
+TinyYOLO-CoreML/Pods/Target Support Files/RxSwift/RxSwift-dummy.m
+TinyYOLO-CoreML/Pods/Target Support Files/RxSwift/RxSwift-Info.plist
+TinyYOLO-CoreML/Pods/Target Support Files/RxSwift/RxSwift-prefix.pch
+TinyYOLO-CoreML/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h
+TinyYOLO-CoreML/Pods/Target Support Files/RxSwift/RxSwift.modulemap
+TinyYOLO-CoreML/Pods/Target Support Files/RxSwift/RxSwift.xcconfig
+TinyYOLO-CoreML/TinyYOLO-CoreML.xcodeproj/xcuserdata/teqnological.xcuserdatad/xcschemes/xcschememanagement.plist
